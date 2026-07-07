@@ -1,7 +1,6 @@
 import lume from "lume/mod.ts";
 import vento from "lume/plugins/vento.ts";
 import markdown from "lume/plugins/markdown.ts";
-import date from "lume/plugins/date.ts";
 
 const site = lume({
   src: "./src",
@@ -11,7 +10,6 @@ const site = lume({
 
 site.use(vento());
 site.use(markdown());
-site.use(date());
 
 site.copy("../static", "static");
 

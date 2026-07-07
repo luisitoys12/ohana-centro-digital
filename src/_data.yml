@@ -1,0 +1,13 @@
+site:
+  name: "Ohana Instituto Irapuato"
+  tagline: "Acompañamos el neurodesarrollo de tu familia"
+  description: "Centro especializado en TDAH, neurodesarrollo e inclusión educativa en Irapuato, Guanajuato. Acompañamos a niños, jóvenes y familias con calidez y profesionalismo."
+  url: "https://[DOMINIO]"
+  telefono: "[TELÉFONO]"
+  whatsapp: "[WHATSAPP]"
+  email: "[EMAIL]"
+  ga4_id: "[GA4_ID]"
+  form_endpoint: "[FORM_ENDPOINT]"
+  ubicacion: "Irapuato, Guanajuato, México"
+
+layout: "base.vto"

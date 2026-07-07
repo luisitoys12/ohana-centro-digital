@@ -1,0 +1,13 @@
+<article class="card">
+  <div class="card__content">
+    {{ if title }}
+    <h3 class="card__title">{{ title }}</h3>
+    {{ /if }}
+    {{ if description }}
+    <p class="card__description">{{ description }}</p>
+    {{ /if }}
+    {{ if link }}
+    <a href="{{ link }}" class="card__link btn btn--outline">{{ linkText || 'Ver más' }}</a>
+    {{ /if }}
+  </div>
+</article>

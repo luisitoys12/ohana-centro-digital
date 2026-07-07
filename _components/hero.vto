@@ -1,0 +1,18 @@
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <h1 class="hero__title">{{ title }}</h1>
+      {{ if subtitle }}
+      <p class="hero__subtitle">{{ subtitle }}</p>
+      {{ /if }}
+      {{ if cta }}
+      <div class="hero__actions">
+        <a href="{{ cta.link }}" class="btn btn--primary btn--lg">{{ cta.text }}</a>
+        {{ if ctaSecondary }}
+        <a href="{{ ctaSecondary.link }}" class="btn btn--outline btn--lg">{{ ctaSecondary.text }}</a>
+        {{ /if }}
+      </div>
+      {{ /if }}
+    </div>
+  </div>
+</section>

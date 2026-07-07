@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <p class="footer__name">{{ site.name }}</p>
+        <p class="footer__tagline">{{ site.tagline }}</p>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📞 <a href="tel:{{ site.telefono }}">{{ site.telefono }}</a></li>
+          <li>💬 <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>✉️ <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/quienes-somos/">Quiénes somos</a></li>
+          <li><a href="/programas/">Programas</a></li>
+          <li><a href="/inscripcion/">Inscripción</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+          <li><a href="/recursos/">Recursos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; {{ new Date().getFullYear() }} {{ site.name }}. Todos los derechos reservados.</p>
+      <p>Irapuato, Guanajuato, México</p>
+    </div>
+  </div>
+</footer>

@@ -2,8 +2,7 @@ name: Publicar en GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -19,21 +18,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Clone repository
         uses: actions/checkout@v4
 
-      - name: Setup Deno
+      - name: Setup Deno environment
         uses: denoland/setup-deno@v2
         with:
-          deno-version: v2.x
+          cache: true
 
-      - name: Build sitio con Lume
+      - name: Build site
         run: deno task build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: "_site"
 
   deploy:
     needs: build
@@ -42,6 +44,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy a GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

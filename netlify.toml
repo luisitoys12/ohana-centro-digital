@@ -1,9 +1,6 @@
 [build]
-  command = "deno task build"
+  command = "curl -fsSL https://deno.land/install.sh | sh && /opt/buildhome/.deno/bin/deno task build"
   publish = "_site"
 
 [build.environment]
-  DENO_VERSION = "2.x"
-
-[[plugins]]
-  package = "netlify-plugin-deno"
+  DENO_INSTALL = "/opt/buildhome/.deno"

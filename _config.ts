@@ -8,7 +8,7 @@ import sitemap from "lume/plugins/sitemap.ts";
 const site = lume({
   src: "./src",
   dest: "./_site",
-  location: new URL("https://[DOMINIO]"),
+  location: new URL("https://luisitoys12.github.io/ohana-centro-digital/"),
 });
 
 site.use(vento());

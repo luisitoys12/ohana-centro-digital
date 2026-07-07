@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "build": "deno run -A https://deno.land/x/lume@v2.4.3/ci.ts",
-    "serve": "deno run -A https://deno.land/x/lume@v2.4.3/ci.ts --serve"
+    "build": "deno run -A jsr:@lume/core/ci",
+    "serve": "deno run -A jsr:@lume/core/ci --serve"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.4.3/"
+    "lume/": "jsr:@lume/core@^3/"
   }
 }
